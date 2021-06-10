@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  background-image: url('./images/background.jpg');
+  object-fit: cover;
+  object-position: top;
+  width: 100vw;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+}
+.slider {
+  width: 476px;
+  height: 450px;
+  background: #ffffff;
+  position: relative;
+  top: 60px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.slide {
+  position: relative;
+  width: 446px;
+  top: -60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+  opacity: 1;
+  }
+
+.changer {
+  position: relative;
+  top: -100px;
+  left: 100px;
+  width: 476px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changeOne.active {
+  opacity: 1;
+}
+
+.changeTwo.active {
+  opacity: 1;
+}
+
+.changeThree.active {
+  opacity: 1;
+}
+
+.changeFour.active {
+  opacity: 1;
+}
+
+
+.changeOne, .changeTwo, .changeThree, .changeFour
+{
+  background: #06f939;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 1px;
+  opacity: 0.5;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .changer{
+    position: relative;
+    width: 476px;
+    left: 100px;
+    top: -110px;
+  }
+  .changeOne, .changeTwo, .changeThree, .changeFour
+  {
+    position: relative;
+    top: 10px;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+  .slider {
+    position: relative;
+    width: 400px;
+    left: 45px;
+  }
+
+  .slide {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 376px;
+  }
+
+  .changer{
+    position: relative;
+    width: 400px;
+    left: 45px;;
+    top: -170px;
+    display: flex;
+    justify-content: center;
+  }
+  .changeOne, .changeTwo, .changeThree, .changeFour
+  {
+    position: relative;
+    top: 20px;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .slider {
+    position: relative;
+    width: 70vw;
+  }
+
+  .slide {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 65vw;
+  }
+
+  .changer{
+    position: relative;
+    width: 100vw;
+    display: flex:
+    justify-content: center;
+  }
+
+  .changeOne, .changeTwo, .changeThree, .changeFour
+  {
+    position: relative;
+    top: -60px;
+    left: 315px;
+  }
+}
